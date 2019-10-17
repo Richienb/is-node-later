@@ -1,7 +1,7 @@
 {
-    "name": "the-module",
+    "name": "is-node-later",
     "version": "0.0.0",
-    "description": "My awesome module.",
+    "description": "Check if the NodeJS version satisfies the required version.",
     "repository": "https://github.com/Richienb/node-module-boilerplate.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
@@ -10,14 +10,19 @@
         "index.js"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=0.12"
     },
     "scripts": {
         "lint": "eslint .",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
-    "dependencies": {},
+    "keywords": [
+        "nodejs",
+        "version"
+    ],
+    "dependencies": {
+        "semver": "^6.3.0"
+    },
     "devDependencies": {
         "ava": "^2.1.0",
         "eslint": "^6.5.1",

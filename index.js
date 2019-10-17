@@ -1,7 +1,6 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-    if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+const semver = require("semver")
+const currentVersion = semver.clean(process.version)
 
-    return `${input} & ${postfix}`
-}
+module.exports = (minimumVersion) => semver.satisfies(currentVersion, minimumVersion)

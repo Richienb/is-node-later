@@ -1,41 +1,30 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Is Node Later [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/is-node-later/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/is-node-later)
 
-My awesome module.
+Check if the NodeJS version satisfies the required version.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/is-node-later.png)](https://npmjs.com/package/is-node-later)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install is-node-later
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const isNodeLater = require("is-node-later");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+isNodeLater(">=10.0.0");
+//=> true
 ```
 
 ## API
 
-### theModule(input, options?)
+### isNodeLater(minimumVersion)
 
-#### input
+#### minimumVersion
 
-Type: `string`
+Type: `number`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+Check if the NodeJS version satisfies the required version.

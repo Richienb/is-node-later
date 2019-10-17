@@ -1,14 +1,13 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * Check if the NodeJS version satisfies the required version.
+ * @param minimumVersion The minimum version to check.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const isNodeLater = require("is-node-later");
+ * isNodeLater(">=10.0.0");
+ * //=> true
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare function isNodeLater(minimumVersion: string): boolean;
 
-export = theModule;
+export = isNodeLater;

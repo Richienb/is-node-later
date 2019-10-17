@@ -1,13 +1,8 @@
 import test from "ava"
-import theModule from "."
+import isNodeLater from "."
 
 test("main", (t) => {
-    t.throws(() => {
-        theModule(123)
-    }, {
-        instanceOf: TypeError,
-        message: "Expected a string, got number",
-    })
+    t.true(isNodeLater(">=0.x"))
 
-    t.is(theModule("unicorns"), "unicorns & rainbows")
+    t.false(isNodeLater("<=0.0.0"))
 })
