@@ -10,7 +10,7 @@
         "index.js"
     ],
     "engines": {
-        "node": ">=0.12"
+        "node": ">=4"
     },
     "scripts": {
         "lint": "eslint .",
@@ -18,9 +18,11 @@
     },
     "keywords": [
         "nodejs",
-        "version"
+        "version",
+        "semver"
     ],
     "dependencies": {
+        "clean-semver": "^1.0.0",
         "semver": "^6.3.0"
     },
     "devDependencies": {
